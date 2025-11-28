@@ -21,7 +21,7 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: <Github size={32} />,
-      href: "https://github.com/abd_abdil",
+      href: "https://github.com/abdil19",
       color: "text-purple-400",
     },
     {
@@ -33,19 +33,19 @@ const Contact = () => {
     {
       name: "Instagram",
       icon: <Instagram size={32} />,
-      href: "https://instagram.com/your_username",
+      href: "https://instagram.com/abd_abdil",
       color: "text-cyan-400",
     },
     {
       name: "Twitter",
       icon: <Twitter size={32} />,
-      href: "https://twitter.com/your_username",
+      href: "https://twitter.com/telureperidey",
       color: "text-purple-400",
     },
     {
       name: "Facebook",
       icon: <Facebook size={32} />,
-      href: "https://facebook.com/your_username",
+      href: "https://www.facebook.com/share/14Q19EpgC8Q/",
       color: "text-pink-400",
     },
   ];
@@ -94,7 +94,7 @@ const Contact = () => {
           {/* Footer */}
           <div className="mt-20 text-center text-gray-400">
             <p className="flex items-center justify-center gap-2">
-              Made with <span className="text-red-500">❤</span> and dedication
+              © Made with <span className="text-red-500">❤</span> and dedication
               by <span className="gradient-text font-semibold">ABD</span>
             </p>
           </div>

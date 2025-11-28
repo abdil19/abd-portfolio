@@ -37,10 +37,10 @@ const Navbar = () => {
           {/* Logo */}
           <a
             href="#home"
-            className="text-2xl font-bold gradient-text tracking-wider"
-            style={{ fontFamily: "Georgia, serif" }}
+            className="text-3xl font-bold gradient-text"
+            style={{ fontFamily: "var(--font-dancing)" }}
           >
-            𝒜ℬ𝒟
+            ABD
           </a>
 
           {/* Desktop Menu */}

@@ -67,7 +67,7 @@ const Experience = () => {
             My <span className="gradient-text">Experience</span>
           </h2>
           <p className="text-gray-400 text-center mb-12">
-            Professional and organizational journey
+            My Professional and organizational journey
           </p>
 
           {/* Tabs */}
