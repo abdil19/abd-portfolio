@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Calendar, Award } from "lucide-react";
+import { Calendar, Award } from "lucide-react";
+import Image from "next/image";
 
 const Education = () => {
   const educationData = [
@@ -10,6 +11,7 @@ const Education = () => {
       degree: "Bachelor of Information Systems",
       period: "2022 - Present",
       gpa: "3.67",
+      logo: "/logos/upn.png",
       description:
         "Focusing on Data Management, Analytics, and Information System Development.",
     },
@@ -18,6 +20,7 @@ const Education = () => {
       degree: "Senior High School - Science (IPA)",
       period: "2019 - 2022",
       gpa: null,
+      logo: "/logos/khairunnas.png",
       description:
         "Built strong foundation in Mathematics, Physics, and Chemistry.",
     },
@@ -50,8 +53,14 @@ const Education = () => {
                 className="glass rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300"
               >
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 glass rounded-xl">
-                    <GraduationCap className="text-cyan-400" size={28} />
+                  <div className="relative w-14 h-14 glass rounded-xl overflow-hidden p-2 flex-shrink-0">
+                    <Image
+                      src={edu.logo}
+                      alt={`${edu.institution} logo`}
+                      fill
+                      className="object-contain"
+                      unoptimized
+                    />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-cyan-400 mb-1">

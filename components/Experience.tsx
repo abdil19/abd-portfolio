@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Briefcase, Users, Calendar, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState<"internship" | "organization">(
@@ -15,6 +16,7 @@ const Experience = () => {
       organization: "Bangkit Academy 2024 (Batch 2)",
       period: "Sep 2024 - Jan 2025",
       location: "Remote",
+      logo: "/logos/bangkit.png",
       description:
         "Participated in an intensive Cloud Computing learning path where I gained hands-on experience with Google Cloud Platform (GCP). During this program, I developed and deployed APIs for machine learning applications and collaborated with a team on the Capstone Project: Wheelify, a vehicle classification mobile application that integrates TensorFlow models with cloud infrastructure.",
     },
@@ -26,6 +28,7 @@ const Experience = () => {
       organization: "HIMASIFO UPNVJT",
       period: "Mar 2024 - Feb 2025",
       location: "Surabaya, Indonesia",
+      logo: "/logos/himasifo.png",
       description:
         "Leading social community initiatives and programs while coordinating team activities and community engagement events. Building strategic partnerships with external organizations and managing departmental projects to foster team development and achieve organizational goals.",
     },
@@ -34,6 +37,7 @@ const Experience = () => {
       organization: "UKKI UPN Jatim",
       period: "2025",
       location: "Surabaya, Indonesia",
+      logo: "/logos/ukki.png",
       description:
         "Managing communications and public relations activities including creating engaging content for organizational branding. Coordinating various events and maintaining external relations while building a strong network with stakeholders and partners to enhance the organization's visibility and reputation.",
     },
@@ -99,12 +103,14 @@ const Experience = () => {
                 className="glass rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 w-full"
               >
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
-                  <div className="p-4 glass rounded-xl">
-                    {activeTab === "internship" ? (
-                      <Briefcase className="text-cyan-400" size={32} />
-                    ) : (
-                      <Users className="text-purple-400" size={32} />
-                    )}
+                  <div className="relative w-16 h-16 glass rounded-xl overflow-hidden p-2 flex-shrink-0">
+                    <Image
+                      src={exp.logo}
+                      alt={`${exp.organization} logo`}
+                      fill
+                      className="object-contain"
+                      unoptimized
+                    />
                   </div>
 
                   <div className="flex-1">
