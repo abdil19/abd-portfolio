@@ -15,12 +15,8 @@ const Experience = () => {
       organization: "Bangkit Academy 2024 (Batch 2)",
       period: "Sep 2024 - Jan 2025",
       location: "Remote",
-      description: [
-        "Participated in intensive Cloud Computing learning path",
-        "Gained hands-on experience with Google Cloud Platform (GCP)",
-        "Developed and deployed APIs for machine learning applications",
-        "Collaborated on Capstone Project: Wheelify - Vehicle Classification App",
-      ],
+      description:
+        "Participated in an intensive Cloud Computing learning path where I gained hands-on experience with Google Cloud Platform (GCP). During this program, I developed and deployed APIs for machine learning applications and collaborated with a team on the Capstone Project: Wheelify, a vehicle classification mobile application that integrates TensorFlow models with cloud infrastructure.",
     },
   ];
 
@@ -30,24 +26,16 @@ const Experience = () => {
       organization: "HIMASIFO UPNVJT",
       period: "Mar 2024 - Feb 2025",
       location: "Surabaya, Indonesia",
-      description: [
-        "Leading social community initiatives and programs",
-        "Coordinating team activities and community engagement events",
-        "Building partnerships with external organizations",
-        "Managing departmental projects and team development",
-      ],
+      description:
+        "Leading social community initiatives and programs while coordinating team activities and community engagement events. Building strategic partnerships with external organizations and managing departmental projects to foster team development and achieve organizational goals.",
     },
     {
       title: "Public Relations (Humas)",
       organization: "UKKI UPN Jatim",
       period: "2025",
       location: "Surabaya, Indonesia",
-      description: [
-        "Managing communications and public relations activities",
-        "Creating content for organizational branding",
-        "Coordinating events and external relations",
-        "Building network with stakeholders and partners",
-      ],
+      description:
+        "Managing communications and public relations activities including creating engaging content for organizational branding. Coordinating various events and maintaining external relations while building a strong network with stakeholders and partners to enhance the organization's visibility and reputation.",
     },
   ];
 
@@ -138,17 +126,9 @@ const Experience = () => {
                       </div>
                     </div>
 
-                    <ul className="space-y-2">
-                      {exp.description.map((item, itemIndex) => (
-                        <li
-                          key={itemIndex}
-                          className="flex items-start gap-2 text-gray-300"
-                        >
-                          <span className="text-cyan-400 mt-1">▹</span>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-gray-300 leading-relaxed">
+                      {exp.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
