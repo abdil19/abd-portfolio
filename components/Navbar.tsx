@@ -38,7 +38,7 @@ const Navbar = () => {
           <a
             href="#home"
             className="text-3xl font-bold gradient-text"
-            style={{ fontFamily: "var(--font-dancing)" }}
+            style={{ fontFamily: "'Dancing Script', cursive" }}
           >
             ABD
           </a>
